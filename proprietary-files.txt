@@ -48,7 +48,6 @@ product/lib/vendor.qti.hardware.fm@1.0.so
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
 
 # IMS
--product/priv-app/ims/ims.apk|a83f012cd4b28b7122d5d249bc741f508650c5ea
 product/lib64/libdiag_system.so
 product/lib64/libimscamera_jni.so
 product/lib64/libimsmedia_jni.so
@@ -79,12 +78,16 @@ etc/permissions/qti_permissions.xml
 etc/sysconfig/qti_whitelist.xml
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 product/etc/permissions/qcrilhook.xml
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
-product/framework/qti-telephony-common.jar|d53c26a3df5ae5d3218caca05a89dcbaa9a1810f
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Telephony - from LA.QSSI.11.0.r1-09900-qssi.0.
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
+-system_ext/framework/qti-telephony-common.jar|bfa766915a0e2b25de395e907e6ec389309c5122
+-system_ext/priv-app/ims/ims.apk|db2e6a46f0b09c59ba0002114bce20da5df6be23
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|344ad9179560cc83b208f62fb009fdc2799609fd
 
 # WiFi Display
 bin/wfdservice
