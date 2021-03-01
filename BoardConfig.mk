@@ -5,7 +5,7 @@
 #
 
 BOARD_VENDOR := xiaomi
-DEVICE_PATH := device/xiaomi/gauguin
+DEVICE_PATH := device/rr/xiaomi/gauguin
 
 BUILD_BROKEN_DUP_RULES := true
 
